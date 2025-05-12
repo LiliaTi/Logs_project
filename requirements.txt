@@ -14,8 +14,9 @@ jupyterlab==4.1.6        # Jupyter Lab (опционально)
 ipykernel==6.29.3        # Ядро для Python 3.11
 
 # Работа с БД
-psycopg[binary]==3.1.18  # Современный клиент PostgreSQL (для TimescaleDB)
-sqlalchemy==2.0.29       # ORM (если потребуется)
+sqlalchemy>=2.0.0  # вместо ==2.0.29
+sqlalchemy-timescaledb==0.4.1 
+psycopg2-binary>=2.9.0
 
 # Дополнительные утилиты
 python-dotenv==1.0.0     # Загрузка .env файлов
